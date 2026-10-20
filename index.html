@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#071a38">
+    <meta name="description" content="الموقع الرسمي لمدرسة الجديدة الثانوية النموذجية بنين">
+
+    <title>الرئيسية | مدرسة الجديدة الثانوية النموذجية بنين</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- شاشة الافتتاح -->
+<div class="splash-screen" id="splash">
+
+    <div class="splash-orb orb-one"></div>
+    <div class="splash-orb orb-two"></div>
+
+    <div class="splash-content">
+
+        <div class="splash-logo">
+            <!-- ضع رابط شعار المدرسة هنا لاحقاً -->
+            <!-- اترك src فارغاً إذا لم تكن لديك صورة -->
+            <img src="" alt="" class="school-logo-image">
+
+            <div class="logo-placeholder">
+                <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+        </div>
+
+        <div class="splash-overline">
+            EXCELLENCE • KNOWLEDGE • FUTURE
+        </div>
+
+        <h1>مدرسة الجديدة</h1>
+
+        <p>الثانوية النموذجية بنين</p>
+
+        <div class="splash-progress">
+            <div id="splash-progress-fill"></div>
+        </div>
+
+        <span class="splash-status" id="splash-status">
+            مرحباً بكم في صرح التميز
+        </span>
+
+    </div>
+
+    <div class="splash-bottom">
+        KNOWLEDGE BUILDS THE FUTURE
+    </div>
+
+</div>
+
+
+<!-- خلفية القائمة الجانبية -->
+<div class="page-overlay" id="page-overlay"></div>
+
+
+<!-- القائمة الجانبية -->
+<aside class="staff-drawer" id="staff-drawer">
+
+    <div class="drawer-header">
+
+        <div class="drawer-brand">
+            <div class="drawer-brand-icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <div>
+                <h3>المجتمع المدرسي</h3>
+                <p>الإدارة والكادر التعليمي</p>
+            </div>
+        </div>
+
+        <button class="icon-button" id="close-drawer"
+                aria-label="إغلاق القائمة">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="drawer-navigation">
+
+        <button class="drawer-tab active" data-tab="teachers">
+            <i class="fa-solid fa-chalkboard-user"></i>
+            المعلمون
+        </button>
+
+        <button class="drawer-tab" data-tab="management">
+            <i class="fa-solid fa-user-tie"></i>
+            الإدارة
+        </button>
+
+    </div>
+
+
+    <div class="drawer-body">
+
+        <div class="drawer-intro">
+            <span class="eyebrow">OUR SCHOOL COMMUNITY</span>
+            <h3 id="drawer-section-title">الكادر التعليمي</h3>
+            <p>مساحة مخصصة للتعريف بالمعلمين والإداريين وبيانات التواصل.</p>
+        </div>
+
+
+        <div id="teachers-panel" class="staff-panel active">
+
+            <!--
+                عدّل الاسم والمادة ورقم التواصل والصورة لاحقاً.
+                لا تضع أرقاماً شخصية دون موافقة أصحابها.
+            -->
+
+            <article class="staff-profile">
+
+                <div class="staff-avatar">
+                    <!-- صورة المعلم الأول -->
+                    <img src="" alt="" class="teacher-image">
+
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="staff-details">
+                    <h4>اسم المعلم الأول</h4>
+                    <span>الرياضيات</span>
+
+                    <a href="tel:"
+                       class="staff-phone"
+                       data-phone="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>يضاف رقم التواصل</span>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="staff-profile">
+
+                <div class="staff-avatar">
+                    <img src="" alt="" class="teacher-image">
+
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="staff-details">
+                    <h4>اسم المعلم الثاني</h4>
+                    <span>الفيزياء</span>
+
+                    <a href="tel:" class="staff-phone" data-phone="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>يضاف رقم التواصل</span>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="staff-profile">
+
+                <div class="staff-avatar">
+                    <img src="" alt="" class="teacher-image">
+
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="staff-details">
+                    <h4>اسم المعلم الثالث</h4>
+                    <span>اللغة العربية</span>
+
+                    <a href="tel:" class="staff-phone" data-phone="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>يضاف رقم التواصل</span>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="staff-profile">
+
+                <div class="staff-avatar">
+                    <img src="" alt="" class="teacher-image">
+
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="staff-details">
+                    <h4>اسم المعلم الرابع</h4>
+                    <span>الحاسوب والتكنولوجيا</span>
+
+                    <a href="tel:" class="staff-phone" data-phone="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>يضاف رقم التواصل</span>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <div id="management-panel" class="staff-panel">
+
+            <article class="staff-profile">
+
+                <div class="staff-avatar">
+                    <img src="" alt="" class="teacher-image">
+
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="staff-details">
+                    <h4>اسم مدير المدرسة</h4>
+                    <span>مدير المدرسة</span>
+
+                    <a href="tel:" class="staff-phone" data-phone="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>يضاف رقم التواصل</span>
+                    </a>
+                </div>
+
+            </article>
+
+
+            <article class="staff-profile">
+
+                <div class="staff-avatar">
+                    <img src="" alt="" class="teacher-image">
+
+                    <div class="avatar-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                </div>
+
+                <div class="staff-details">
+                    <h4>اسم الوكيل</h4>
+                    <span>وكيل المدرسة</span>
+
+                    <a href="tel:" class="staff-phone" data-phone="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>يضاف رقم التواصل</span>
+                    </a>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+
+    <div class="drawer-footer">
+        <i class="fa-solid fa-shield-halved"></i>
+        بيانات الكادر قابلة للتحديث من ملفات الموقع.
+    </div>
+
+</aside>
+
+
+<!-- الشريط العلوي -->
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a href="index.html" class="brand">
+
+            <div class="brand-mark">
+                <!-- الشعار فارغ وقابل للإضافة -->
+                <img src="" alt="" class="school-logo-image">
+
+                <div class="logo-placeholder">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+            </div>
+
+            <div class="brand-text">
+                <strong>مدرسة الجديدة</strong>
+                <span>الثانوية النموذجية بنين</span>
+            </div>
+
+        </a>
+
+
+        <nav class="desktop-nav">
+
+            <a href="index.html" class="active">
+                الرئيسية
+            </a>
+
+            <a href="about.html">
+                عن المدرسة
+            </a>
+
+            <a href="academics.html">
+                الأكاديميات
+            </a>
+
+            <a href="admissions.html">
+                القبول
+            </a>
+
+            <a href="activities.html">
+                الأنشطة
+            </a>
+
+            <a href="news.html">
+                الأخبار
+            </a>
+
+            <a href="contact.html">
+                اتصل بنا
+            </a>
+
+        </nav>
+
+
+        <div class="header-actions">
+
+            <button class="icon-button search-trigger"
+                    id="search-trigger"
+                    aria-label="البحث">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <a href="portal.html" class="portal-button">
+                <i class="fa-solid fa-lock"></i>
+                <span>بوابة النظام</span>
+            </a>
+
+            <button class="icon-button mobile-menu-trigger"
+                    id="mobile-menu-trigger"
+                    aria-label="فتح القائمة">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- نافذة البحث -->
+<div class="search-modal" id="search-modal">
+
+    <div class="search-box">
+
+        <button class="icon-button search-close"
+                id="search-close"
+                aria-label="إغلاق البحث">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <span class="eyebrow">DISCOVER OUR SCHOOL</span>
+
+        <h2>ماذا تبحث عنه؟</h2>
+
+        <form id="site-search-form">
+
+            <div class="search-input-wrap">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input id="site-search-input"
+                       type="search"
+                       placeholder="ابحث عن صفحة أو خدمة..."
+                       autocomplete="off">
+            </div>
+
+            <button type="submit" class="primary-button">
+                بحث
+            </button>
+
+        </form>
+
+        <div id="search-results" class="search-results"></div>
+
+    </div>
+
+</div>
+
+
+<!-- المحتوى الرئيسي -->
+<main>
+
+
+    <!-- واجهة الترحيب -->
+    <section class="hero-section" id="home">
+
+        <div class="hero-decoration hero-decoration-one"></div>
+        <div class="hero-decoration hero-decoration-two"></div>
+
+        <div class="hero-container">
+
+            <div class="hero-content reveal">
+
+                <div class="hero-badge">
+                    <span class="status-dot"></span>
+                    صرح علمي نحو مستقبل أفضل
+                </div>
+
+                <span class="hero-overline">
+                    ALJADIDA MODEL SECONDARY SCHOOL
+                </span>
+
+                <h1>
+                    نصنع قادة الغد
+                    <span>بالعلم والابتكار</span>
+                </h1>
+
+                <p>
+                    في مدرسة الجديدة الثانوية النموذجية بنين،
+                    نؤمن بأن التعليم المتميز هو الأساس لبناء جيل
+                    واعٍ ومبدع، يمتلك المعرفة والقيم والقدرة
+                    على صناعة المستقبل.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a href="about.html" class="primary-button">
+                        استكشف المدرسة
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+
+                    <a href="admissions.html" class="outline-button">
+                        التقديم والتسجيل
+                        <i class="fa-solid fa-arrow-up-left-from-circle"></i>
+                    </a>
+
+                </div>
+
+
+                <div class="hero-trust">
+
+                    <div class="trust-icon">
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+
+                    <div>
+                        <strong>التعليم أولاً</strong>
+                        <span>معرفة، أخلاق، وتميز</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-visual reveal">
+
+                <div class="hero-image-frame">
+
+                    <!--
+                        ضع صورة المدرسة أو الطلاب هنا.
+                        اترك الرابط فارغاً حتى تضيف صورتك.
+                    -->
+
+                    <img src=""
+                         alt="صورة مبنى المدرسة"
+                         class="hero-main-image">
+
+                    <div class="hero-image-placeholder">
+                        <div class="placeholder-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </div>
+
+                        <h3>مدرسة الجديدة الثانوية النموذجية</h3>
+
+                        <p>مكان مخصص لصورة المدرسة</p>
+                    </div>
+
+                    <div class="image-gradient"></div>
+
+                    <div class="hero-image-caption">
+                        <span>بيئة تعليمية ملهمة</span>
+                        <i class="fa-solid fa-arrow-up-left-from-circle"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card floating-card-top">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <div>
+                        <strong>التميز الأكاديمي</strong>
+                        <span>طموح بلا حدود</span>
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card floating-card-bottom">
+
+                    <div class="floating-icon">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+
+                    <div>
+                        <strong>نحو المستقبل</strong>
+                        <span>العلم يصنع الفرق</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-scroll">
+            <span>اكتشف المزيد</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+
+    </section>
+
+
+
+    <!-- شريط الإعلانات -->
+    <section class="announcement-strip">
+
+        <div class="announcement-label">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>الإعلانات</span>
+        </div>
+
+        <div class="announcement-content">
+
+            <div class="announcement-track">
+
+                <span>
+                    <i class="fa-solid fa-circle-dot"></i>
+                    مرحباً بكم في الموقع الإلكتروني لمدرسة الجديدة الثانوية النموذجية بنين.
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-dot"></i>
+                    ستُنشر هنا إعلانات المدرسة ومواعيد الامتحانات والتسجيل.
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-circle-dot"></i>
+                    يرجى متابعة الموقع للاطلاع على التحديثات الرسمية.
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- الإحصائيات -->
+    <section class="stats-section section-container">
+
+        <div class="stats-heading">
+
+            <div>
+                <span class="eyebrow">OUR SCHOOL IN NUMBERS</span>
+                <h2>رحلة من الطموح والإنجاز</h2>
+            </div>
+
+            <p>
+                أرقام المدرسة الرسمية ستضاف بعد اعتمادها من الإدارة.
+            </p>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <article class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-user-graduate"></i>
+                </div>
+
+                <h3 data-count="0" data-suffix="+">+0</h3>
+
+                <p>الطلاب</p>
+
+                <span>يضاف العدد الرسمي</span>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </div>
+
+                <h3 data-count="0" data-suffix="+">+0</h3>
+
+                <p>المعلمون</p>
+
+                <span>يضاف العدد الرسمي</span>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-trophy"></i>
+                </div>
+
+                <h3 data-count="0" data-suffix="+">+0</h3>
+
+                <p>الإنجازات</p>
+
+                <span>تضاف الإنجازات المعتمدة</span>
+
+            </article>
+
+
+            <article class="stat-card">
+
+                <div class="stat-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </div>
+
+                <h3 data-count="0" data-suffix="+">+0</h3>
+
+                <p>المرافق التعليمية</p>
+
+                <span>تضاف البيانات الرسمية</span>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- عن المدرسة -->
+    <section class="about-preview section-container" id="about">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">ABOUT OUR SCHOOL</span>
+
+                <h2>
+                    تعليم يتجاوز
+                    <span>حدود الفصول</span>
+                </h2>
+            </div>
+
+            <a href="about.html" class="text-link">
+                اكتشف المدرسة كاملة
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+        </div>
+
+
+        <div class="about-grid">
+
+            <article class="about-feature">
+
+                <div class="feature-number">01</div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+
+                <h3>رؤية تعليمية واضحة</h3>
+
+                <p>
+                    إعداد طلاب يمتلكون المعرفة والمهارات
+                    والقيم اللازمة للنجاح في حياتهم العلمية.
+                </p>
+
+                <a href="about.html" aria-label="المزيد عن رؤية المدرسة">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+            </article>
+
+
+            <article class="about-feature featured">
+
+                <div class="feature-number">02</div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-microscope"></i>
+                </div>
+
+                <h3>التعلم والتطبيق</h3>
+
+                <p>
+                    مساحة للتعريف بالمعامل والأنشطة العلمية
+                    والتجارب التعليمية التي توفرها المدرسة.
+                </p>
+
+                <a href="academics.html" aria-label="المزيد عن الأكاديميات">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+            </article>
+
+
+            <article class="about-feature">
+
+                <div class="feature-number">03</div>
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+
+                <h3>مجتمع مدرسي متكامل</h3>
+
+                <p>
+                    تعاون بين الطلاب والمعلمين والإدارة
+                    وأولياء الأمور لتحقيق أفضل النتائج.
+                </p>
+
+                <button class="feature-link" data-open-staff>
+                    تعرف على الكادر
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- الأكاديميات -->
+    <section class="academics-section">
+
+        <div class="section-container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="eyebrow">ACADEMICS & LEARNING</span>
+
+                    <h2>
+                        مسيرتك التعليمية
+                        <span>تبدأ من هنا</span>
+                    </h2>
+
+                    <p class="heading-description">
+                        تعرف على المراحل الدراسية والمصادر التعليمية
+                        والخدمات الأكاديمية.
+                    </p>
+                </div>
+
+                <a href="academics.html" class="text-link">
+                    جميع الأقسام
+                    <i class="fa-solid fa-arrow-left"></i>
+                </a>
+
+            </div>
+
+
+            <div class="academic-grid">
+
+                <a href="academics.html#grade-one" class="academic-card">
+
+                    <div class="academic-card-top">
+                        <span>01</span>
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                    <h3>الصف الأول الثانوي</h3>
+
+                    <p>المقررات الدراسية والمواد التعليمية.</p>
+
+                    <span class="card-action">
+                        استكشف المرحلة
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+
+
+                <a href="academics.html#grade-two" class="academic-card">
+
+                    <div class="academic-card-top">
+                        <span>02</span>
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+
+                    <h3>الصف الثاني الثانوي</h3>
+
+                    <p>المناهج والمسارات والموارد التعليمية.</p>
+
+                    <span class="card-action">
+                        استكشف المرحلة
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+
+
+                <a href="academics.html#grade-three" class="academic-card">
+
+                    <div class="academic-card-top">
+                        <span>03</span>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+
+                    <h3>الصف الثالث الثانوي</h3>
+
+                    <p>الاستعداد للامتحانات والشهادة الثانوية.</p>
+
+                    <span class="card-action">
+                        استكشف المرحلة
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+
+
+                <a href="academics.html#library" class="academic-card">
+
+                    <div class="academic-card-top">
+                        <span>04</span>
+                        <i class="fa-solid fa-book-open-reader"></i>
+                    </div>
+
+                    <h3>المكتبة الرقمية</h3>
+
+                    <p>مساحة مخصصة للكتب والمذكرات والمراجع.</p>
+
+                    <span class="card-action">
+                        تصفح المكتبة
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- القبول -->
+    <section class="admission-banner section-container">
+
+        <div class="admission-content">
+
+            <span class="eyebrow">ADMISSIONS & ENROLLMENT</span>
+
+            <h2>
+                خطوتك القادمة
+                <span>نحو التميز</span>
+            </h2>
+
+            <p>
+                تعرف على شروط القبول والمستندات المطلوبة
+                وإجراءات التسجيل في المدرسة.
+            </p>
+
+            <a href="admissions.html" class="light-button">
+                اكتشف إجراءات القبول
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+        </div>
+
+
+        <div class="admission-decoration">
+            <div class="admission-circle">
+                <i class="fa-solid fa-file-signature"></i>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- الأخبار -->
+    <section class="news-section section-container" id="news">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="eyebrow">LATEST NEWS & EVENTS</span>
+
+                <h2>آخر الأخبار والفعاليات</h2>
+
+                <p class="heading-description">
+                    تابع المستجدات والإعلانات والأنشطة المدرسية.
+                </p>
+            </div>
+
+            <a href="news.html" class="text-link">
+                مركز الأخبار
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+
+        </div>
+
+
+        <div class="news-grid">
+
+            <article class="news-card">
+
+                <div class="news-image">
+
+                    <img src="" alt="" class="news-photo">
+
+                    <div class="news-placeholder">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span>صورة الإعلان</span>
+                    </div>
+
+                    <span class="news-category">إعلان مدرسي</span>
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            يحدد التاريخ لاحقاً
+                        </span>
+                    </div>
+
+                    <h3>الإعلانات الرسمية للمدرسة</h3>
+
+                    <p>
+                        مكان مخصص لنشر الإعلانات الرسمية
+                        المعتمدة من إدارة المدرسة.
+                    </p>
+
+                    <a href="news.html" class="news-link">
+                        اقرأ المزيد
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+
+                    <img src="" alt="" class="news-photo">
+
+                    <div class="news-placeholder">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span>صورة الفعالية</span>
+                    </div>
+
+                    <span class="news-category">فعاليات</span>
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            يحدد التاريخ لاحقاً
+                        </span>
+                    </div>
+
+                    <h3>الفعاليات والأنشطة المدرسية</h3>
+
+                    <p>
+                        مساحة لعرض الأنشطة العلمية والثقافية
+                        والرياضية وأبرز المشاركات.
+                    </p>
+
+                    <a href="activities.html" class="news-link">
+                        اكتشف الأنشطة
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-image">
+
+                    <img src="" alt="" class="news-photo">
+
+                    <div class="news-placeholder">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>صورة تعليمية</span>
+                    </div>
+
+                    <span class="news-category">تعليم</span>
+
+                </div>
+
+                <div class="news-body">
+
+                    <div class="news-meta">
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            يحدد التاريخ لاحقاً
+                        </span>
+                    </div>
+
+                    <h3>المستجدات الأكاديمية</h3>
+
+                    <p>
+                        مكان مخصص لمواعيد الامتحانات
+                        والجداول والموارد التعليمية.
+                    </p>
+
+                    <a href="academics.html" class="news-link">
+                        التفاصيل الأكاديمية
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- كلمة المدرسة -->
+    <section class="school-message-section">
+
+        <div class="section-container message-grid">
+
+            <div class="message-visual">
+
+                <div class="message-photo">
+
+                    <!-- ضع صورة مدير المدرسة هنا -->
+                    <img src="" alt="" class="principal-image">
+
+                    <div class="principal-placeholder">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <span>صورة مدير المدرسة</span>
+                    </div>
+
+                </div>
+
+                <div class="message-caption">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <span>كلمة إدارة المدرسة</span>
+                </div>
+
+            </div>
+
+
+            <div class="message-content">
+
+                <span class="eyebrow">A MESSAGE FROM OUR SCHOOL</span>
+
+                <h2>معاً نبني مستقبلاً أفضل</h2>
+
+                <p>
+                    نرحب بكم في الموقع الإلكتروني لمدرسة الجديدة
+                    الثانوية النموذجية بنين، الذي نطمح من خلاله
+                    إلى تعزيز التواصل مع الطلاب وأولياء الأمور
+                    وتوفير المعلومات الأكاديمية والإدارية
+                    في مساحة رقمية منظمة وسهلة الاستخدام.
+                </p>
+
+                <p>
+                    ستضاف كلمة مدير المدرسة الرسمية واسمه وصورته
+                    بعد تزويدنا بالمعلومات المعتمدة.
+                </p>
+
+                <button class="outline-button"
+                        data-open-staff>
+                    تعرف على الإدارة
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- التواصل -->
+    <section class="contact-strip section-container">
+
+        <div class="contact-strip-icon">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+
+        <div>
+            <h2>هل تحتاج إلى المساعدة؟</h2>
+            <p>تواصل مع إدارة المدرسة للاستفسارات والمعلومات.</p>
+        </div>
+
+        <a href="contact.html" class="primary-button">
+            اتصل بنا
+            <i class="fa-solid fa-arrow-left"></i>
+        </a>
+
+    </section>
+
+
+</main>
+
+
+
+<!-- التذييل -->
+<footer class="site-footer">
+
+    <div class="footer-main section-container">
+
+
+        <div class="footer-brand-column">
+
+            <a href="index.html" class="brand footer-brand">
+
+                <div class="brand-mark">
+                    <img src="" alt="" class="school-logo-image">
+
+                    <div class="logo-placeholder">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                </div>
+
+                <div class="brand-text">
+                    <strong>مدرسة الجديدة</strong>
+                    <span>الثانوية النموذجية بنين</span>
+                </div>
+
+            </a>
+
+            <p>
+                منصة مدرسية للتعريف بالمؤسسة التعليمية،
+                ومشاركة الأخبار والمعلومات الأكاديمية
+                وتسهيل التواصل مع المجتمع المدرسي.
+            </p>
+
+            <div class="footer-socials">
+
+                <!-- أضف روابط الحسابات الرسمية عند توفرها -->
+                <a href="#" aria-label="فيسبوك"
+                   data-placeholder-link>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+
+                <a href="#" aria-label="يوتيوب"
+                   data-placeholder-link>
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+
+                <a href="#" aria-label="تليجرام"
+                   data-placeholder-link>
+                    <i class="fa-brands fa-telegram"></i>
+                </a>
+
+                <a href="#" aria-label="واتساب"
+                   data-placeholder-link>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>روابط الموقع</h3>
+
+            <a href="index.html">الرئيسية</a>
+            <a href="about.html">عن المدرسة</a>
+            <a href="academics.html">الأكاديميات والمناهج</a>
+            <a href="admissions.html">القبول والتسجيل</a>
+            <a href="activities.html">الأنشطة والإنجازات</a>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>خدمات المدرسة</h3>
+
+            <a href="news.html">الأخبار والإعلانات</a>
+            <a href="academics.html#library">المكتبة الرقمية</a>
+            <a href="admissions.html#faq">الأسئلة الشائعة</a>
+            <a href="portal.html">بوابة النظام الداخلي</a>
+
+            <button class="footer-staff-link" data-open-staff>
+                الطاقم المدرسي
+            </button>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h3>معلومات التواصل</h3>
+
+            <p>
+                <i class="fa-solid fa-location-dot"></i>
+                السودان - الجديدة
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                يضاف رقم المدرسة
+            </p>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                يضاف البريد الرسمي
+            </p>
+
+            <p>
+                <i class="fa-regular fa-clock"></i>
+                تضاف ساعات العمل
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <div class="section-container">
+
+            <span>
+                © <span id="current-year">2026</span>
+                مدرسة الجديدة الثانوية النموذجية بنين
+            </span>
+
+            <span class="footer-bottom-note">
+                العلم أساس المستقبل
+            </span>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- شريط التنقل السفلي شبه الشفاف -->
+<nav class="mobile-bottom-nav" aria-label="التنقل السريع">
+
+    <a href="index.html" class="bottom-nav-item active">
+        <i class="fa-solid fa-house"></i>
+        <span>الرئيسية</span>
+    </a>
+
+    <a href="academics.html" class="bottom-nav-item">
+        <i class="fa-solid fa-book-open"></i>
+        <span>الأكاديميات</span>
+    </a>
+
+    <button class="bottom-nav-item" id="bottom-staff">
+        <span class="bottom-nav-center-icon">
+            <i class="fa-solid fa-users"></i>
+        </span>
+        <span>الطاقم</span>
+    </button>
+
+    <a href="news.html" class="bottom-nav-item">
+        <i class="fa-regular fa-newspaper"></i>
+        <span>الأخبار</span>
+    </a>
+
+    <button class="bottom-nav-item" id="bottom-menu">
+        <i class="fa-solid fa-bars"></i>
+        <span>المزيد</span>
+    </button>
+
+</nav>
+
+
+
+<!-- زر العودة إلى الأعلى -->
+<button id="back-to-top" class="back-to-top"
+        aria-label="العودة إلى الأعلى">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
