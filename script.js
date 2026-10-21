@@ -117,12 +117,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    document.querySelectorAll(".school-logo-image").forEach(img => {
+    document.querySelectorAll(".1792596527395.jpg").forEach(img => {
 
-        const wrapper = img.closest(".splash-logo, .brand-mark");
+        const wrapper = img.closest(".1792596527395.jpg");
 
         const placeholder = wrapper
-            ? wrapper.querySelector(".logo-placeholder")
+            ? wrapper.querySelector(".1792596527395.jpg")
             : null;
 
         configureImage(img, placeholder);
@@ -130,11 +130,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    document.querySelectorAll(".hero-main-image").forEach(img => {
+    document.querySelectorAll(".1792596527395.jpg").forEach(img => {
 
         configureImage(
             img,
-            img.parentElement.querySelector(".hero-image-placeholder")
+            img.parentElement.querySelector(".1792596527395.jpg")
         );
 
     });
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         configureImage(
             img,
-            img.parentElement.querySelector(".news-placeholder")
+            img.parentElement.querySelector(".1792596527395.jpg")
         );
 
     });
